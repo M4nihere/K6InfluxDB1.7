@@ -1,0 +1,12 @@
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    isDefault: true
+    database: ${GF_DATASOURCE_INFLUXDB_DB} # Corrected to match the database variable
+    user: ${GF_DATASOURCE_INFLUXDB_USER}           # Standard user username
+    secureJsonData:
+      password: ${GF_DATASOURCE_INFLUXDB_PASSWORD} # Standard user password

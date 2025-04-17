@@ -1,0 +1,29 @@
+# # InfluxDB secrets
+# INFLUXDB_INIT_USERNAME=admin
+# INFLUXDB_INIT_PASSWORD=adminpassword
+# INFLUXDB_INIT_ORG=myorg
+# INFLUXDB_INIT_BUCKET=k6
+# INFLUXDB_INIT_ADMIN_TOKEN=EEKpryGZk8pVDXmIuy484BKUxM5jOEDv7YNoeNZUbsNbpbPbP6kK_qY9Zsyw7zNnlZ7pHG16FYzNaqwLMBUz8g==
+
+# # Grafana secrets
+# GRAFANA_ADMIN_USER=admin
+# GRAFANA_ADMIN_PASSWORD=admin
+
+# # K6 InfluxDB output token (optional, can reuse INFLUXDB_INIT_ADMIN_TOKEN)
+# K6_INFLUXDB_TOKEN=EEKpryGZk8pVDXmIuy484BKUxM5jOEDv7YNoeNZUbsNbpbPbP6kK_qY9Zsyw7zNnlZ7pHG16FYzNaqwLMBUz8g==
+
+
+# .env file
+
+# Database initialization
+INFLUXDB_DB=k6       # Name of the default database (bucket in 2.x)
+INFLUXDB_USER=k6            # Admin username
+INFLUXDB_PASSWORD=k6      # Admin password
+
+# Optional: If you need a standard user besides the admin
+INFLUXDB_ADMIN_USER=admin                      # Standard user username
+INFLUXDB_ADMIN_PASSWORD=nine@123     # Standard user password
+
+# Grafana secrets
+GRAFANA_ADMIN_USER=dogpackapp
+GRAFANA_ADMIN_PASSWORD=dogpackapp12&
